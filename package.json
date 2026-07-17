@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-tankerkoenig",
+  "version": "0.1.0",
+  "description": "Tankerkoenig MCP — German real-time fuel prices (Benzinpreise) for all",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tankerkoenig"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-tankerkoenig"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
