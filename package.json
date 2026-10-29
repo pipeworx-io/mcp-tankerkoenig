@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tankerkoenig",
-  "version": "0.1.1",
-  "description": "Tankerkoenig MCP — German real-time fuel prices (Benzinpreise) for all",
+  "version": "0.2.0",
+  "description": "Tankerkoenig MCP — German real-time fuel prices (Benzinpreise) for all German gas stations, sourced from the official MTS-K (Markttransparenzstelle fuer Kraftstoffe) via creativecommons.tankerkoenig.de.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tankerkoenig": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tankerkoenig"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tankerkoenig.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tankerkoenig",
   "pipeworx": {
-    "sourceHash": "v1-f66581173d76c3d1206e7362e9dc9f89e4b6272608182e95effe520ad0bf2ad2",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "mode": "gateway",
+    "slug": "tankerkoenig",
+    "gatewaySlug": "tankerkoenig",
+    "sourceHash": "v1-5db28c6df2a6c3fd3840289d5915f3d74779e50c4463bb056ea447057aca3a99",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
