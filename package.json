@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tankerkoenig",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tankerkoenig MCP — German real-time fuel prices (Benzinpreise) for all German gas stations, sourced from the official MTS-K (Markttransparenzstelle fuer Kraftstoffe) via creativecommons.tankerkoenig.de.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tankerkoenig",
     "gatewaySlug": "tankerkoenig",
-    "sourceHash": "v1-5db28c6df2a6c3fd3840289d5915f3d74779e50c4463bb056ea447057aca3a99",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-8f43f62e7d1319ed3112b09e393714c8d83ecddaf72b6916b61b90c9d31a6e98",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
